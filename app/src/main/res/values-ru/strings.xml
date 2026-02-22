@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Картинная галерея</string>
+    <string name="next_button_text">Вперёд</string>
+    <string name="prev_button_text">Назад</string>
+    <string name="artwork1_title">Большая волна в Канагаве</string>
+    <string name="artwork1_artist">Кацусика Хокусай</string>
+    <string name="artwork2_title">Девушка с жемчужной серёжкой</string>
+    <string name="artwork2_artist">Ян Вермеер</string>
+    <string name="artwork3_title">Впечатление. Восходящее солнце</string>
+    <string name="artwork3_artist">Клод Моне</string>
+    <string name="artwork4_title">Странник над морем тумана</string>
+    <string name="artwork4_artist">Каспар Давид Фридрих</string>
+    <string name="artwork5_title">Продавец ковров</string>
+    <string name="artwork5_artist">Жан-Леон Жером</string>
+</resources>
