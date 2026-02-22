@@ -2,4 +2,12 @@
     <string name="app_name">Art Space</string>
     <string name="artwork1_title">The Great Wave of Kanagawa</string>
     <string name="artwork1_artist">Katsushika Hokusai</string>
+    <string name="artwork2_title">Girl with a Pearl Earring</string>
+    <string name="artwork2_artist">Johannes Vermeer</string>
+    <string name="artwork3_title">Impression, Sunrise</string>
+    <string name="artwork3_artist">Claude Monet</string>
+    <string name="artwork4_title">Wanderer above the Sea of Fog</string>
+    <string name="artwork4_artist">Caspar David Friedrich</string>
+    <string name="artwork5_title">The Carpet Merchant</string>
+    <string name="artwork5_artist">Jean-Léon Gérôme</string>
 </resources>
