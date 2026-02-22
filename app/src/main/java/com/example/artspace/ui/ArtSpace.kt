@@ -106,7 +106,7 @@ fun LandscapeLayout(currentIndex: MutableState<Int>, modifier: Modifier = Modifi
         ) {
             ArtworkInfo(artwork)
             Spacer(Modifier.weight(1f))
-            ControlButtons(currentIndex, modifier.fillMaxWidth())
+            ControlButtons(currentIndex, Modifier.fillMaxWidth())
         }
     }
 }
@@ -162,13 +162,14 @@ fun ArtworkInfo(artwork: Artwork, modifier: Modifier = Modifier) {
 fun ControlButtons(currentIndex: MutableState<Int>, modifier: Modifier = Modifier) {
     Row(
         modifier = modifier,
-        horizontalArrangement = Arrangement.SpaceAround,
+        horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.spacing)),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         // Previous
         Button(
             onClick = { currentIndex.value-- },
             enabled = currentIndex.value > 0,
+            modifier = Modifier.weight(1f),
         ) {
             Text(
                 text = stringResource(R.string.prev_button_text),
@@ -178,6 +179,7 @@ fun ControlButtons(currentIndex: MutableState<Int>, modifier: Modifier = Modifie
         Button(
             onClick = { currentIndex.value++ },
             enabled = currentIndex.value < artworkList.getArtworkCount() - 1,
+            modifier = Modifier.weight(1f),
         ) {
             Text(
                 text = stringResource(R.string.next_button_text),
