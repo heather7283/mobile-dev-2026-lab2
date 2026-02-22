@@ -99,7 +99,7 @@ fun LandscapeLayout(currentIndex: MutableState<Int>, modifier: Modifier = Modifi
         verticalAlignment = Alignment.CenterVertically,
     ) {
         val artwork = artworkList.getArtworkAt(currentIndex.value)
-        ArtworkImage(artwork)
+        ArtworkImage(artwork, Modifier.fillMaxWidth(0.5f))
         Spacer(Modifier.size(dimensionResource(R.dimen.spacing)))
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -115,7 +115,6 @@ fun LandscapeLayout(currentIndex: MutableState<Int>, modifier: Modifier = Modifi
 fun ArtworkImage(artwork: Artwork, modifier: Modifier = Modifier) {
     Surface(
         modifier = modifier,
-        color = MaterialTheme.colorScheme.onBackground,
     ) {
         Image(
             painter = painterResource(artwork.imageRes),
