@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Art Space</string>
+    <string name="artwork1_title">The Great Wave of Kanagawa</string>
+    <string name="artwork1_artist">Katsushika Hokusai</string>
 </resources>
