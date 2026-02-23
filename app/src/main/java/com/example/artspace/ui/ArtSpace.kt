@@ -1,4 +1,4 @@
- package com.example.artspace.ui
+package com.example.artspace.ui
 
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
@@ -33,26 +33,26 @@ import com.example.artspace.data.Artwork
 import com.example.artspace.data.ArtworkList
 import com.example.artspace.ui.theme.ArtSpaceTheme
 
- val artworkList = ArtworkList()
+val artworkList = ArtworkList()
 
- @Preview(locale = "ru")
- @Composable
- fun ArtSpacePreview() {
-     val configuration = LocalConfiguration.current
-     val isLandscape = configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
-     val currentIndex = rememberSaveable { mutableIntStateOf(0) }
+@Preview(locale = "ru")
+@Composable
+fun ArtSpacePreview() {
+    val configuration = LocalConfiguration.current
+    val isLandscape = configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
+    val currentIndex = rememberSaveable { mutableIntStateOf(0) }
 
-     ArtSpaceTheme() {
-         Surface() {
-             val padding = dimensionResource(R.dimen.edges_padding)
-             if (isLandscape) {
-                 LandscapeLayout(currentIndex, Modifier.safeContentPadding().padding(padding))
-             } else {
-                 PortraitLayout(currentIndex, Modifier.safeContentPadding().padding(padding))
-             }
-         }
-     }
- }
+    ArtSpaceTheme() {
+        Surface() {
+            val padding = dimensionResource(R.dimen.edges_padding)
+            if (isLandscape) {
+                LandscapeLayout(currentIndex, Modifier.safeContentPadding().padding(padding))
+            } else {
+                PortraitLayout(currentIndex, Modifier.safeContentPadding().padding(padding))
+            }
+        }
+    }
+}
 
 @Composable
 fun ArtSpace() {
